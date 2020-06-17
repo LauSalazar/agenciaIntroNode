@@ -1,0 +1,30 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janerio
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre nosotros
+        .row.mb-5
+            .col-md-6
+                p Suspendisse pharetra nisi nec augue tincidunt blandit non at dolor. In hac habitasse platea dictumst. Mauris consequat ac tortor a ornare. Sed varius aliquam felis. Pellentesque venenatis vulputate nulla, quis condimentum urna varius quis. Quisque at convallis magna, auctor commodo purus. Duis sodales sed nunc nec dapibus.
+                p Proin eu pellentesque ex. Aliquam euismod odio pretium, condimentum dolor vitae, consectetur ante. Aenean ac ligula vel enim tempor iaculis.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+        h2.text-center.mb-5 Próximos viajes  
+        include ../layout/partials/viajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de marzo de 2020 a 30 de marzo de 2020
+                        p.precio $2500USD
+    .container
+        h2.text-center.my-5 Testimonios
+        include ../layout/partials/testimonios
